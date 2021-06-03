@@ -7,7 +7,6 @@ export const Main = ({ title, description, woman, man, areas }) => {
 
   return (
     <Wrapper>
-      
       <Title>
         <FaDumbbell /> {title}
       </Title>

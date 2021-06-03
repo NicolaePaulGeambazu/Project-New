@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
@@ -19,6 +20,9 @@ export default function App({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
+      <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </Head>
         <Component {...pageProps} />
       </ThemeProvider>
     </>

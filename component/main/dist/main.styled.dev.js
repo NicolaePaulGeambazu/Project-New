@@ -30,7 +30,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  border: 1px solid black;\n"]);
+  var data = _taggedTemplateLiteral(["\n  border: 0px solid black;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -70,7 +70,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  border: 1px solid black;\n  border-radius: 5px;\n  background: linear-gradient(#a6a6a6, #bfbfbf, #e6e6e6);\n  box-shadow: 5px 5px #888888;\n"]);
+  var data = _taggedTemplateLiteral(["\n  border-radius: 5px;\n  background: linear-gradient(#a6a6a6, #bfbfbf, #e6e6e6);\n  box-shadow: 5px 5px #888888;\n"]);
 
   _templateObject = function _templateObject() {
     return data;

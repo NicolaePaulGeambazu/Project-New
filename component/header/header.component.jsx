@@ -2,7 +2,7 @@ import React from "react";
 import { Search } from "../search/search.component";
 import { Cell, Header, Nav, Social } from "./header.styled";
 
-export const Top = () => {
+export const Top = ({ siv, iv }) => {
   return (
     <Header>
       <Cell>
@@ -14,7 +14,7 @@ export const Top = () => {
         </Nav>
         <Nav>female</Nav>
         <Nav>male</Nav>
-        <Search />
+        <Search siv={siv} iv={iv} />
       </Cell>
     </Header>
   );
