@@ -13,6 +13,7 @@ export const Nav = styled.button`
   width: 80px;
   height: 40px;
   margin-left: 30px;
+  border: 1px solid ${({ selected }) => (selected ? "red" : "blue")};
 `;
 
 export const Cell = styled.div`

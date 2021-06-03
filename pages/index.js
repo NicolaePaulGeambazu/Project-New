@@ -1,29 +1,27 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "../component/grid/grid.component";
 import { Top } from "../component/header";
 import { Main } from "../component/main/main.component";
-import { Search } from "../component/search";
-
-const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
-  },
-});
 
 const Home = ({ exercises }) => {
-  const [inputValue, setInputValue] = useState();
+  const [inputValue, setInputValue] = useState("");
+  const [isMale, setIsMale] = useState(true);
 
+  const fillterExercises = exercises.filter((exercise) => {
+    return exercise.name.toLowerCase().indexOf(inputValue.toLowerCase()) > -1;
+  });
+  console.log(fillterExercises);
   console.log(inputValue);
   return (
     <>
-      <Top siv={setInputValue} iv={inputValue} />
+      <Top siv={setInputValue} iv={inputValue} im={isMale} sim={setIsMale} />
       <Grid>
-        {exercises.map((a) => (
+        {fillterExercises.map((a) => (
           <Main
             key={a.id}
             title={a.name}
             id={a.id}
+            isMale={isMale}
             description={a.transcript}
             woman={a.female}
             man={a.male}

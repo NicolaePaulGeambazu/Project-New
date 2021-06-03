@@ -30,7 +30,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  border: 0;\n  cursor: pointer;\n  width: 80px;\n  height: 40px;\n  margin-left: 30px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  border: 0;\n  cursor: pointer;\n  width: 80px;\n  height: 40px;\n  margin-left: 30px;\n  border: 1px solid ", ";\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -55,7 +55,10 @@ var Header = _styledComponents["default"].div(_templateObject());
 
 exports.Header = Header;
 
-var Nav = _styledComponents["default"].button(_templateObject2());
+var Nav = _styledComponents["default"].button(_templateObject2(), function (_ref) {
+  var selected = _ref.selected;
+  return selected ? "red" : "blue";
+});
 
 exports.Nav = Nav;
 

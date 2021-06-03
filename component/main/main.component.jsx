@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { Area, Box, Frame, Image, Title, Wrapper } from "./main.styled.js";
 import { FaDumbbell } from "react-icons/fa";
 
-export const Main = ({ title, description, woman, man, areas }) => {
-  const [isMale, setIsMale] = useState(true);
-
+export const Main = ({ title, description, woman, man, areas, isMale }) => {
   return (
     <Wrapper>
       <Title>

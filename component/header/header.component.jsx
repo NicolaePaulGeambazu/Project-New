@@ -2,7 +2,7 @@ import React from "react";
 import { Search } from "../search/search.component";
 import { Cell, Header, Nav, Social } from "./header.styled";
 
-export const Top = ({ siv, iv }) => {
+export const Top = ({ siv, iv, im, sim }) => {
   return (
     <Header>
       <Cell>
@@ -12,8 +12,8 @@ export const Top = ({ siv, iv }) => {
         <Nav>
           <Social href="https://uk.gymshark.com">Shop</Social>
         </Nav>
-        <Nav>female</Nav>
-        <Nav>male</Nav>
+        <Nav onClick={() => sim(false)} selected={!im}>female</Nav>
+        <Nav onClick={() => sim(true)} selected={im}>male</Nav>
         <Search siv={siv} iv={iv} />
       </Cell>
     </Header>

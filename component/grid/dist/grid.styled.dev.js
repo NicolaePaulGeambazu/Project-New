@@ -10,7 +10,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  grid-gap: 50px;\n  width: 100px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: grid;\n  grid-gap: 50px;\n  width: 100px;\n\n  @media screen and (min-width: 768px) {\n    grid-template-columns: repeat(2, 1fr);\n  }\n\n  @media screen and (min-width: 1024px) {\n    grid-template-columns: repeat(4, 1fr);\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
